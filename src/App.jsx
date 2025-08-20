@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MapPin  } from "lucide-react";
 
 export default function WeatherApp() {
   const [city, setCity] = useState("");
@@ -167,7 +168,9 @@ export default function WeatherApp() {
           ? "bg-green-700 text-white hover:bg-green-600"
           : "bg-green-500 text-white hover:bg-green-600"
       }`}
-                >📍My Location</button>
+                >
+                  <MapPin size={20} /> {/* 🎯 location/gps icon */}
+                </button>
               </div>
             </div>
 
